@@ -31,6 +31,7 @@ body {
 }
 
 .main {
+    top: 2rem;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -191,9 +192,18 @@ input-group {
     box-shadow: 0 0 2rem rgba(33, 37, 41, .1);
 }
 
+.navbar-expand {
+    position: sticky;
+    top: 1rem;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff; /* Couleur de fond de votre barre de navigation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour donner du relief */
+    height: 60px; /* Hauteur fixe de votre barre de navigation */
+    overflow: hidden; /* Cacher le contenu qui dépasse */
+}
 .navbar-expand .navbar-collapse {
     min-width: 200px;
-
 }
 
 .avatar {
